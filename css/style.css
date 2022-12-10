@@ -1,0 +1,377 @@
+/* General Settings */
+body {
+  font-family: "Poppins";
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: calc(100vh + 100px);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 36px 24px;
+}
+
+.header-pontuation-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pontuation {
+  display: flex;
+  padding: 3px;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Impact Environmental */
+.impact-environmental-msg {
+  background: linear-gradient(122.02deg, #4a8fe7 8.43%, #55bdea 99.47%);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 0px 36px;
+  color: #121212;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.impact-environmental-msg h1 {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-style: normal;
+}
+
+.impact-environmental-msg .know-more {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin-top: 17px;
+  padding: 6px 16px;
+  color: #52aee9;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.cup-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+}
+
+.cup-img img {
+  position: absolute;
+  bottom: -30px;
+  width: 70px;
+}
+
+/* Can Recycle */
+.title-items {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #494949;
+  margin-bottom: 15px;
+}
+.can-recycle {
+  text-align: center;
+  margin: 0 36px;
+}
+
+.can-recycle-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.can-recycle-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #e5f0fe;
+  border-radius: 10px;
+}
+
+.can-recycle-img2 {
+  background: #f2ddf9;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  margin: 0 36px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 15px;
+}
+
+.services-item {
+  width: 35vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #55bdea;
+  padding: 25px 18px;
+  border: 1px solid #55bdea;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.services-item p {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+/* Menu */
+.menu {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px -2px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+.menu-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .scanner-buttom {
+  position: absolute;
+  align-self: center;
+  top: -76px;
+}
+
+/* Scanner */
+.scanner-buttom {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: #55bdea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preview {
+  position: absolute;
+  rotate: 90deg;
+  align-self: center;
+  bottom: 0vh;
+  border-radius: 30px;
+  z-index: 1;
+  width: 125vh;
+}
+
+.scanner {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.scanner-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  color: #494949;
+  z-index: 2;
+}
+
+.aim-scanner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 18;
+  z-index: 2;
+  border-radius: 30px 30px 0 0;
+}
+
+.back {
+  margin: 54px 38px 14px;
+  align-self: flex-start;
+}
+
+.to-score {
+  width: 100vw;
+  height: 60vh;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 47px;
+  z-index: 2;
+  animation: go-back 1.5s;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.to-score-ok-img {
+  width: 80px;
+}
+
+.to-score-ok-msg {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #121212;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.to-score-informations {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.to-score-information {
+  background: #f9f9f9;
+  border-radius: 15px;
+  display: flex;
+  gap: 15px 10px;
+  padding: 17px;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-score-btns {
+  display: flex;
+  gap: 21px;
+}
+
+.to-score-buttom {
+  border: 1px solid #121212;
+  border-radius: 100px;
+  padding: 12.5px 12px;
+}
+
+#continue {
+  background: #0edeb0;
+  border: none;
+}
+
+@media (max-width: 416px) {
+  .impact-environmental-msg {
+    justify-content: start;
+  }
+
+  .cup-img {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+  }
+}
+@media (min-width: 620px) {
+  html {
+    font-size: 22px;
+  }
+
+  .header {
+    margin: 0 60px;
+  }
+
+  .impact-environmental-msg {
+    margin: 0 100px;
+  }
+
+  .cup-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+  }
+
+  .cup-img img {
+    position: absolute;
+    bottom: -30px;
+    width: 85px;
+  }
+
+  @media (min-width: 1000px) {
+    body {
+      align-items: center;
+    }
+
+    .header {
+      width: 1000px;
+    }
+    .impact-environmental-msg {
+      width: 800px;
+    }
+  }
+  .scanner-top {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 730px) {
+  #preview {
+    rotate: 0deg;
+    bottom: 100px;
+    width: 900px;
+  }
+
+  .aim-scanner img {
+    rotate: 90deg;
+  }
+}

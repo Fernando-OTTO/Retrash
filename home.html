@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Retrash</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-menu">
+      <img src="img/menu/menu.png">
+    </div>
+    <div class="header-pontuation-container">
+      <div class="pontuation">
+        <img src="img/menu/recycle.png">
+        <span id="pontuation">9</span>
+      </div>
+      <div>
+        <img src="img/menu/bell.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="impact-environmental-msg">
+    <div>
+      <h1>Você sabe quais os impactos <br>ambientais do plásticos?</h1>
+      <a class="know-more" href="#">Saiba mais</a>
+    </div>
+
+    <div class="cup-img"><img src="img/plastic-cup.png"></div>
+  </div>
+
+  <div class="can-recycle">
+    <h2 class="title-items">O que você pode reciclar</h2>
+    <div class="can-recycle-items">
+      <div class="can-recycle-item">
+        <img src="img/canrecycle/bottle.png">
+      </div>
+      <div class="can-recycle-item can-recycle-img2">
+        <img src="img/canrecycle/plastic-fork.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <h2 class="title-items">Conheça nossos serviços</h2>
+    <ul class="services-list">
+      <li>
+        <a class="services-item" href="#">
+          <img src="img/services/trash.png" alt="">
+          <p>Reciclagem</p>
+        </a>
+      </li>
+
+      <li>
+        <a class="services-item" href="#">
+          <img src="img/services/achievements.png" alt="">
+          <p>Conquistas</p>
+        </a>
+      </li>
+
+      <li>
+        <a class="services-item" href="#">
+          <img src="img/services/book.png" alt="">
+          <p>Reciclagem</p>
+        </a>
+      </li>
+
+      <li>
+        <a class="services-item" href="#">
+          <img src="img/services/ongs.png" alt="">
+          <p>Ongs</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu">
+    <div class="scanner-buttom">
+      <img src="/img/scanner/scanner.png" alt="">
+    </div>
+
+    <ul class="menu-items">
+      <li class="menu-item">
+        <a href=""><img src="/img/menu/user.png" alt=""></a>
+      </li>
+
+      <li class="menu-item">
+        <a href=""><img src="/img/menu/home.png" alt=""></a>
+      </li>
+
+      <li class="menu-item">
+        <a href=""><img src="/img/menu/bag.png" alt=""></a>
+      </li>
+    </ul>
+  </div>
+
+  <video id="preview"></video>
+
+  <div class=" scanner">
+    <div class="scanner-top">
+      <div class="back"><img src="/img/scanner/arrow-left.png"></div>
+      <p>Aponte a câmera para o QR Code</p>
+    </div>
+
+    <div class="aim-scanner">
+      <img src="img/scanner/aim-scanner.png">
+    </div>
+  </div>
+
+  <div class="to-score">
+    <img class="to-score-ok-img" src="img/score/ok.png">
+    <p class="to-score-ok-msg">Tudo OK!</p>
+    <div class="to-score-informations">
+      <span class="to-score-information">
+        <img src="img/score/recycle.png">
+        <p><strong id="reCoins-Info">0</strong> ReCoins</p>
+      </span>
+      <span class="to-score-information">
+        <img src="img/score/trash">
+        <p><strong id="trash-info">0</strong> Kg</p>
+      </span>
+    </div>
+
+    <div class="to-score-btns">
+      <div class="to-score-buttom">
+        <p>Cancelar</p>
+      </div>
+      <div class="to-score-buttom" id="continue">
+        <p>Continuar</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
